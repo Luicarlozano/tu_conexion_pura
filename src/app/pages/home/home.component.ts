@@ -14,7 +14,12 @@ export class HomeComponent {
 
   constructor(private router: Router){}
 
-  gotoAboutMe(){
+  goToAboutMe(){
     this.router.navigate(['Quien_Soy']);
   }
+
+  goToServices(){
+    this.router.navigate(['Servicios']);
+}
+
 }
