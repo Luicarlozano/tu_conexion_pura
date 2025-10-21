@@ -7,7 +7,7 @@
             <p>La Armonización Energética es un espacio de limpieza y restauración de tu campo vibracional. A través del uso de péndulo, sonido y canalización, se liberan bloqueos, emociones retenidas y energías densas que impiden tu bienestar. Esta sesión te ayuda a recuperar tu equilibrio natural, sentir ligereza, claridad mental y una profunda sensación de paz interior.<br> <br> <b>Duración:</b> 60 minutos <br><b>Modalidad:</b> Virtual <br> <b>Valor:</b> 55.000 COP/15 USD <br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.
             </p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
             <h2>Clases de Meditación</h2>
             <p>Cada clase es una experiencia guiada para regresar al presente, calmar la mente y abrir el corazón. A través de respiración consciente, visualización y conexión con la energía angelical, aprenderás a entrar en estados de serenidad y expansión de conciencia. Ideal para quienes buscan fortalecer su práctica espiritual y encontrar paz en su día a día.<br><br><b>Duración:</b> 60 minutos<br><b>Modalidad:</b> Virtual<br><b>Valor:</b> 44.000 COP/12 USD <br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.</p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
         <img src="/service_2.png" alt="">  
@@ -28,7 +28,7 @@
             <h2>Sanación del Niño Interior</h2>
             <p>Esta sesión te invita a reconectar con tu niño interior —esa parte de ti que guarda memorias, emociones y deseos no expresados— para brindarle amor, comprensión y contención. A través de canalización y ejercicios de sanación energética, podrás liberar heridas del pasado y recuperar la inocencia, alegría y confianza en ti mismo(a). <br> <br> <b>Duración:</b> 90 minutos<br><b>Modalidad:</b> Virtual<br><b>Valor:</b> 80.000 COP/21 USD <br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.</p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
             <h2>Consulta Angelical</h2>
             <p>En esta sesión, los ángeles te ofrecen mensajes y guía personalizada para los procesos que estás viviendo. A través de canalización y conexión espiritual, recibirás claridad, acompañamiento y orientación para tomar decisiones desde el amor y la confianza. Es un espacio para sentir la presencia y sabiduría de la energía divina. <br><br><b>Duración:</b> 60 minutos<br><b>Modalidad:</b> Virtual<br> <b>Valor:</b> 80.000 COP/21 USD <br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.</p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
         <img src="/servicio_4.png" alt="">
@@ -49,7 +49,7 @@
             <h2>Sanación de la Relación con Padre y Madre</h2>
             <p>Una experiencia profunda para reconciliarte con tus raíces. En esta sesión trabajamos energéticamente los lazos con tus padres, liberando cargas, expectativas y patrones heredados que influyen en tus relaciones actuales. Sanar esta conexión te permite abrir el corazón, fortalecer tu autoestima y vivir en mayor libertad y amor. <br><br><b>Duración:</b> 90 minutos<br><b>Modalidad:</b> Virtual<br> <b>Valor:</b> 80.000 COP/21 USD<br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.</p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
     </div>
@@ -59,9 +59,11 @@
             <h2>Acompañamiento Holístico Integral</h2>
             <p>Un proceso profundo de tres sesiones diseñado para acompañarte en tu transformación interior. Integra la sanación energética, el trabajo con el niño interior, la relación con padre y madre, y la guía angelical, permitiéndote liberar bloqueos, sanar memorias y reconectar con tu propósito. Cada encuentro es personalizado según tu proceso y ritmo. <br><br> <b>Duración:</b> Tres sesiones de 60 minutos cada una.<b>Modalidad:</b> Virtual <br> <b>Valor:</b> 220.000 COP/57 USD<br>Si vives fuera de Colombia el pago será en USD y manejado a través de PayPal.</p>
             <div class="section_button">
-            <button>Pre-agenda tu cita</button>
+            <button (click)="openModalInsert()">Pre-agenda tu cita</button>
             </div>
         </div>
         <img src="/Servicios.png" alt="">
     </div>
 </section>
+
+<app-modal-insert *ngIf="modalIsopenInsert" (close)="closeModalInsert()"></app-modal-insert>
