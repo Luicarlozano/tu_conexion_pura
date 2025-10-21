@@ -30,7 +30,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/googleEvent.js"
             ]
           },
           "configurations": {
