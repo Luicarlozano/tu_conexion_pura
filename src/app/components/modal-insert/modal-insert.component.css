@@ -1,0 +1,50 @@
+.background_modal_calendar{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_calendar{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_calendar .close-button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin: 10px 50px 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+.container_calendar .close-button button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+.bi{
+    color: gray;
+}
+.bi:hover{
+    color: black;
+}
