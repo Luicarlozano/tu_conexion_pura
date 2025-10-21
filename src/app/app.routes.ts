@@ -5,9 +5,10 @@ import { TherapyServicesComponent } from './pages/therapy-services/therapy-servi
 
 
 
+
 export const routes: Routes = [{
     path: '', component: HomeComponent, title: 'Inicio'
 },
 {path: 'Quien_Soy', component: AboutMeComponent, title: 'Quién Soy'},
-{path: 'Servicios', component: TherapyServicesComponent, title: 'Servicios'}
+{path: 'Servicios', component: TherapyServicesComponent, title: 'Servicios'},
 ];
