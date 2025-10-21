@@ -1,0 +1,107 @@
+.background_modal_calendar{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background_modal_calendar .form_container{
+    width: 70%;
+    max-width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.356);
+}
+
+.form_container .close-button{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin: 10px 50px 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+.form_container .close-button button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+.bi{
+    color: gray;
+}
+.bi:hover{
+    color: black;
+}
+
+
+.form_container form .fields{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form_container form .fields label{
+    font-size: 20px;
+}
+
+
+
+.form_container form .fields select{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    border: none;
+    width: 200px;
+}
+
+
+.form_container form .fields input{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    border: none;
+    width: 200px;
+}
+
+.form_container .button_send{
+     display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.button_send button{
+ width: 100px;
+    background-color: #CCD5AE;
+    font-family: "Amaranth", sans-serif;;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button_send button:hover{
+    background-color: #D4A373;
+    transition: 0.3s;
+}

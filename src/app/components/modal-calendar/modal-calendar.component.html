@@ -1,0 +1,51 @@
+<div class="background_modal_calendar">
+  <div class="form_container">
+    <div class="close-button">
+      <button (click)="close.emit()">
+        <i class="bi bi-x-square-fill"></i>
+      </button>
+    </div>
+    <h1>Pre - Agenda tu cita</h1>
+    <form [formGroup]="eventForm" action="" (ngSubmit)="scheduleEvent()">
+      <div class="fields">
+        <label for="service">Servicio</label>
+        <select name="service" id="service" formControlName="service">
+          <option selected="true" disabled="disabled">
+            Selecciona un Servicio
+          </option>
+          <option value="Armonización Energética">
+            Armonización Energética
+          </option>
+          <option value="Clases de Meditación">Clases de Meditación</option>
+          <option value="Sanación del Niño Interior">
+            Sanación del Niño Interior
+          </option>
+          <option value="Consulta Angelical">Consulta Angelical</option>
+          <option value="Sanación de la Relación con Padre y Madre">
+            Sanación de la Relación con Padre y Madre
+          </option>
+          <option value="Acompañamiento Holístico Integral">
+            Acompañamiento Holístico Integral
+          </option>
+        </select>
+      </div>
+      <div class="fields">
+        <label for="eventTime">Fecha y Hora de la cita</label>
+        <input type="datetime-local" id="eventTime" formControlName="eventTime"/>
+      </div>
+      <div class="fields">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" formControlName="name"/>
+      </div>
+      <div class="fields">
+        <label for="cellphone">Celular Contacto</label>
+        <input type="number" id="cellphone" formControlName="cellphone"/>
+      </div>
+      <div class="button_send">
+      <button type="submit">Enviar</button>
+    </div>
+    </form>
+
+
+  </div>
+</div>
