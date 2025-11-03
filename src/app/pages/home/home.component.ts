@@ -19,7 +19,7 @@ export class HomeComponent {
   }
 
   goToServices(){
-    this.router.navigate(['Servicios']);
+    this.router.navigate(['Servicios'],{fragment:'section_container_1'});
 }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalInsertComponent } from '../../components/modal-insert/modal-insert.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,6 +12,9 @@ import { ModalInsertComponent } from '../../components/modal-insert/modal-insert
   styleUrl: './therapy-services.component.css'
 })
 export class TherapyServicesComponent {
+
+  constructor(private router: Router){}
+
   modalIsOpenCalendar = false;
   modalIsopenInsert = false;
 
@@ -27,6 +31,13 @@ export class TherapyServicesComponent {
   }
   closeModalInsert() {
     this.modalIsopenInsert = false;
+  }
+
+  reloadCurrentRoute() {
+    let currentUrl = this.router.url;
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+        this.router.navigate([currentUrl]);
+    });
   }
 
 }
