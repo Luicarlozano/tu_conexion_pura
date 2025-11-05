@@ -38,3 +38,16 @@
 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (min-width: 300px) and (max-width: 480px){
+    .about_me_section img{
+    height: 280px;
+    width: 280px;
+    top: 50px;
+}
+
+.about_me_section .about_me_text{
+    max-width: 95%;
+    padding: 60px 40px 30px 40px;
+}
+}
