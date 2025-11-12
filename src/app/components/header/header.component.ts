@@ -12,5 +12,15 @@ import { Router, RouterLinkWithHref } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+ menuOpen = true;
+
+ openMenu(){
+   this.menuOpen = false;
+}
+
+  closeMenu(){
+    this.menuOpen = true;
+  }
+
 
 }
