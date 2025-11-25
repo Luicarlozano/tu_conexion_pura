@@ -1,6 +1,6 @@
 nav {
   background-color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
   color: black;
   margin: 10px;
   border-radius: 50px;
@@ -28,12 +28,29 @@ h1 {
   margin-right: 10px;
   border-radius: 50%;
 }
+
+.button_menu{
+  border: none;
+  background-color: transparent;
+  display: none; 
+}
+
+.button_menu .bi{
+  font-size: 30px;
+}
+
 .menu {
-  margin-right: 100px;
+  margin-right: 40px;
   font-size: 20px;
 }
 
-ul {
+.button_close_menu{
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.menu_ul {
   display: flex;
   gap: 20px;
 }
@@ -47,4 +64,60 @@ a {
   color: #d4a373;
   font-weight: bold;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 700px){
+
+  .logo-container h1{
+    font-size: 20px;
+  }
+
+  .logo-container .logo{
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .button_menu{
+    display: block;
+  }
+
+ .menu{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 0px;
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 20px 40px 20px 20px;
+    border-radius: 20px;
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    box-shadow: 0 0px 0px 100vmax rgba(0, 0, 0, 0.5);
+    gap:10px
+  }
+
+  .menu .visible{
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  .button_close_menu{
+    display: block;
+  }
+
+  .menu_ul{
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0px;
+    align-items: end;
+    font-size: 35px;
+  }
+
 }
